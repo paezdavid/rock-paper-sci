@@ -1,42 +1,3 @@
-/*
-    function computerPlay() {
-
-        let choices = Math.floor(Math.random() * 3) + 1;
-        
-        if (choices === 1) {
-            return 'rock';
-        } else if (choices === 2) {
-            return 'paper';
-        } else if (choices === 3) {
-            return 'scissors';
-        }
-
-    }
-
-    function round(playerSelection, computerSelection) {
-        computerSelection = computerPlay();
-        playerSelection = prompt('Make your move!').toLowerCase();
-        
-
-        if ((playerSelection == 'paper' && computerSelection == 'rock') 
-        || (playerSelection == 'rock' && computerSelection == 'scissors') 
-        || (playerSelection == 'scissors' && computerSelection == 'paper')) {
-            return alert(`You win! ${playerSelection} beats ${computerSelection}`);
-        } else if ((playerSelection == 'rock' && computerSelection == 'paper') 
-        || (playerSelection == 'scissors' && computerSelection == 'rock') 
-        || (playerSelection == 'paper' && computerSelection == 'scissors')) {
-            return alert(`You lost! ${computerSelection} beats ${playerSelection}`);
-
-        } else if (playerSelection === computerSelection) {
-            return alert("DRAW!");
-
-        }
-
-    }
-    
-    round();
-*/ 
-
 
 
 const rock = document.querySelector('.rock');
@@ -45,8 +6,6 @@ const sci = document.querySelector('.sci');
 
 
 const results = document.querySelector('.results');
-const personChoice = document.querySelector('.person');
-const compuChoice = document.querySelector('.compu');
 const options = document.querySelectorAll('.options');
 const playerScore = document.querySelector('.playerScore');
 const compuScore = document.querySelector('.compuScore');
@@ -136,94 +95,4 @@ reset.addEventListener("click", () => {
 });
 
 
-
-
-
-
 player()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function round() {
-    if (computerPlay !== rockChoice) {
-        counter++;
-        compuScore.textContent = counter;
-    }
-} */
-
-
-
-
-
-
-/* function round(playerSelection, computerSelection) {
-    computerSelection = computerPlay();
-    playerSelection = personChoice.value;
-
-    if ((playerSelection == 'paper' && computerSelection == 'rock') 
-    || (playerSelection == 'rock' && computerSelection == 'scissors') 
-    || (playerSelection == 'scissors' && computerSelection == 'paper')) {
-        playerScore.textContent = 1;
-        compuScore.textContent = 0;
-    
-    } else if ((playerSelection == rock && computerSelection == 'paper') 
-    || (playerSelection == 'scissors' && computerSelection == 'rock') 
-    || (playerSelection == 'paper' && computerSelection == 'scissors')) {
-        return alert(`You lost! ${computerSelection} beats ${playerSelection}`);
-
-    } else if (playerSelection === computerSelection) {
-        return alert("DRAW!");
-
-    }
-
-} */
-
