@@ -75,19 +75,7 @@ function computerPlay() {
 
 }
 
-function player() {
-    rock.addEventListener("click", () => {
-        game("rock");
-    });
 
-    paper.addEventListener("click", () => {
-        game("paper")    
-    });
-
-    sci.addEventListener("click", () => {
-        game("scissors")
-    });
-}
 
 function game(userChoice) {
     let computer = computerPlay();
@@ -121,6 +109,21 @@ function game(userChoice) {
 
 }
 
+
+function player() {
+    rock.addEventListener("click", () => {
+        game("rock");
+    });
+
+    paper.addEventListener("click", () => {
+        game("paper")    
+    });
+
+    sci.addEventListener("click", () => {
+        game("scissors")
+    });
+}
+
 reset.addEventListener("click", () => {
     counter1 = 0;
     playerScore.textContent = counter1;
@@ -138,8 +141,6 @@ reset.addEventListener("click", () => {
 
 
 player()
-
-
 
 
 
