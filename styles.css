@@ -82,19 +82,18 @@ body {
 
 
 .buttonContainer {
-    background-color: crimson;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: auto;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 15px 0;
 }
 
 .resetButton {
+    display: none;
     padding: .5rem 4rem;
 }
 
@@ -102,7 +101,8 @@ body {
 
 .chronology {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     max-width: 1200px;
@@ -116,3 +116,30 @@ body {
     list-style: none;
 }
 
+
+
+
+@media (max-width: 650px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+
+    .playerChoices {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .options {
+        margin-bottom: 10px;
+    }
+
+    .results h3 {
+        font-size: 1.3rem;
+    }
+}

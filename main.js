@@ -15,6 +15,7 @@ const choices_span = document.querySelector(".choices");
 const reset = document.querySelector(".resetButton");
 let round;
 let roundCounter = 1;
+let chronology = document.querySelector(".chronology");
 
 
 
@@ -66,6 +67,23 @@ function game(userChoice) {
         roundCounter++;
     }
 
+    if (counter1 === 5) {
+        choices_span.textContent = "Congratulations. You won the game!";
+        reset.style.display = "initial";
+
+        options.forEach(option => {
+            option.style.pointerEvents = "none";
+        })
+
+
+    } else if (counter2 === 5) {
+        choices_span.textContent = "Computer won this game. I'm sorry :(";
+        reset.style.display = "initial";  
+
+        options.forEach(option => {
+            option.style.pointerEvents = "none";
+        })
+    }
 }
 
 
@@ -88,11 +106,20 @@ reset.addEventListener("click", () => {
     playerScore.textContent = counter1;
     counter2 = 0;
     compuScore.textContent = counter2;
-
     roundCounter = 1;
 
     choices_span.textContent = "";
+
+    reset.style.display = "none";  
+    
+    options.forEach(option => {
+        option.style.pointerEvents = "auto";
+    })
 });
+
+
+
+
 
 
 player()
