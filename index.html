@@ -6,52 +6,37 @@
     <title>Rock, Paper, Scissors</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    
     <div class="wrapper">
-        <div class="optionsContainer">
-            
+        <div class="optionsContainer">      
             <h1>Rock, Paper, Scissors</h1>
             <h3>Choose your weapon and fight the computer.</h3>
 
             <div class="playerChoices">
-                <div class="options rock"><p>ROCK</p></div>
-                <div class="options paper"><p>PAPER</p></div>
-                <div class="options sci"><p>SCISSORS</p></div>
+                <button class="options rock">ROCK</button>
+                <button class="options paper">PAPER</button>
+                <button class="options sci">SCISSORS</button>
             </div>
-
         </div>
     
-
-
         <div class="results">
-
             <div class="player">
                 <div>
                     <h3>Player score: </h3>
                     <div class="playerScore">0</div>
                 </div>
-                
-                
-                
             </div>
 
-
             <div class="computer">
-            
                 <div>
                     <h3>Computer score: </h3>
                     <div class="compuScore">0</div>
                 </div>
-
-                
             </div>
-
-
         </div>
-
-        
 
         <div class="chronology">
             <div>
@@ -59,16 +44,10 @@
             </div>
 
             <div class="buttonContainer">
-                <button class="resetButton">Click me to play again!</button>
+                <button class="resetButton">REMATCH!</button>
             </div>
         </div>
-
-
-
-
     </div>
-
-
 
     <script src="main.js"></script>
 </body>
